@@ -24,7 +24,8 @@ ENV ANDROID_SDK_TOOLS=8092744 \
     SDK_URL="https://dl.google.com/android/repository"
 
 ENV ANDROID_SDK_ROOT=/opt/android-sdk
-ENV PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/cmdline-tools/bin"
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+ENV PATH="$JAVA_HOME/bin:$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/cmdline-tools/bin"
 
 # download and install minimal Android SDK
 RUN echo "Install minimal Android SDK" && \
