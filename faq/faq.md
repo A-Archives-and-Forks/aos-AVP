@@ -136,6 +136,10 @@ Nova is able to play video files sequentially by choosing a play mode. This opti
 * Repeat folder: play all the files sequentially in the folder of the file that initiated the playback, and repeat this process in loop;
 * Binge watching: play TV show episodes sequentially even if they are not located in the same folder and stop at the last one of the last season available.
 
+## How does automatic intro/outro skipping work?
+
+When enabled (off by default, toggled in the Play mode menu/tile), Nova fetches crowd-sourced intro/recap/credits/outro/preview timestamps for the playing episode from the theintrodb.org and introdb.app community databases and automatically seeks past them during playback. Intro, credits, outro and preview are skipped whenever the option is on; the recap is only skipped while binge watching (Binge watching play mode, on an episode auto-played after the previous one), so the first episode you start keeps its recap. A short toast confirms each skip.
+
 ## Dolby Vision and HDR.
 
 Dolby Vision and HDR support on AndroidTV depends on your TV capabilities, AV receiver passthrough compatibility and TV box hardware specification. This multifactor dependency is prone for confusion. 
